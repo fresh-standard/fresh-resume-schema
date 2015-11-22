@@ -1,0 +1,872 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FRESH Resume Schema",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+
+
+    "name": {
+      "type": "string",
+      "description": "Your name as it should appear on the resume.",
+      "required": true
+    },
+
+
+    "meta": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "format": {
+          "type": "string",
+          "description": "The canonical resume format and version. Should be 'FRESH@0.1.0'."
+        },
+        "version": {
+          "type": "string",
+          "description": "The semantic version number for this resume."
+        }
+      }
+    },
+
+
+    "info": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": true,
+      "properties": {
+        "label": {
+          "type": "string",
+          "description": "A label for this resume, such as 'Full-Stack Developer'."
+        },
+        "class": {
+          "type": "string",
+          "description": "Profession type or 'character class'."
+        },
+        "image": {
+          "type": "string",
+          "description": "URL or path to your picture in JPEG, PNG, GIF, or BMP format."
+        },
+        "brief": {
+          "type": "string",
+          "description": "A short description or summary of yourself as a candidate."
+        }
+      }
+    },
+
+
+    "disposition": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+
+        "travel": {
+          "type": "integer",
+          "description": "Percentage of time willing to travel (0 to 100)."
+        },
+
+        "authorization": {
+          "type": "string",
+          "description": "Work authorization: citizen, work visa, etc."
+        },
+
+        "commitment": {
+          "type": "array",
+          "additionalItems": false,
+          "description": "Types of work commitment desired: contract, perm, seasonal, etc.",
+          "items": {
+            "type": "string",
+            "description": "One of: contract, permanent, part-time, seasonal, full-time."
+          }
+        },
+
+        "remote": {
+          "type": "boolean",
+          "description": "Open to remote employment opportunities."
+        },
+
+        "relocation": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+
+            "willing": {
+              "type": ["string","boolean"],
+              "description": "Willingness to relocate."
+            },
+
+            "destinations": {
+              "type": "array",
+              "description": "Preferred destinations for relocation",
+              "additionalItems": false,
+              "items": {
+                "type": "string",
+                "description": "City or area of relocation."
+              }
+            }
+          }
+        }
+      }
+    },
+
+
+    "contact": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+
+        "email": {
+          "type": "string",
+          "description": "Primary contact email.",
+          "format": "email"
+        },
+
+        "phone": {
+          "type": "string",
+          "description": "Primary phone number."
+        },
+
+        "website": {
+          "type": "string",
+          "description": "Website, blog, or home page.",
+          "format": "uri"
+        },
+
+        "other": {
+          "type": "array",
+          "additionalItems": false,
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+
+              "label": {
+                "type": "string",
+                "description": "A label for this contact information."
+              },
+
+              "flavor": {
+                "type": "string",
+                "description": "The flavor of contact information: email, phone, url, postal, or IM."
+              },
+
+              "value": {
+                "type": "string",
+                "description": "Phone number, email address, website, etc."
+              }
+            }
+          }
+        }
+      }
+    },
+
+
+    "location": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+
+        "address": {
+          "type": "string",
+          "description": "Your full postal address."
+        },
+
+        "code": {
+          "type": "string",
+          "description": "Postal or other official routing code."
+        },
+
+        "city": {
+          "type": "string",
+          "description": "Your home city."
+        },
+
+        "country": {
+          "type": "string",
+          "description": "Two-digit country code (US, AU, UK, IN, etc.)."
+        },
+
+        "region": {
+          "type": "string",
+          "description": "Your state, region, or province."
+        }
+      }
+    },
+
+
+    "employment": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+
+        "summary": {
+          "type": "string",
+          "description:": "Summary of overall employment."
+        },
+
+        "history": {
+          "type": "array",
+          "additionalItems": false,
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+
+              "employer": {
+                "type": "string",
+                "description": "Employer name.",
+                "required": true
+              },
+
+              "position": {
+                "type": "string",
+                "description": "Your position or formal job title.",
+                "required": true
+              },
+
+              "url": {
+                "type": "string",
+                "description": "Employer website.",
+                "format": "uri"
+              },
+
+              "start": {
+                "type": "string",
+                "description": "Date you began work, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+                "format": "date",
+                "required": true
+              },
+
+              "end": {
+                "type": "string",
+                "description": "Date you finished work, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+                "format": "date"
+              },
+
+              "summary": {
+                "type": "string",
+                "description": "A summary of your achievements and responsibilities under this employer."
+              },
+
+              "highlights": {
+                "type": "array",
+                "description": "Noteworthy achievements and/or highlights.",
+                "additionalItems": false,
+                "items": {
+                  "type": "string",
+                  "description": "For ex, 'Led 5-person development team, increasing profits by 50% year-over-year'."
+                }
+              },
+
+              "keywords": {
+                "type": "array",
+                "description": "Skills and/or keywords used on this position.",
+                "additionalItems": false,
+                "items": {
+                  "type": "string",
+                  "description": "For example, C++, HTML, HIPAA, etc."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+
+    "skills": {
+      "type": "object",
+      "description": "List of professional skills and technologies.",
+      "additionalProperties": true,
+      "properties": {
+
+        "sets": {
+          "type": "array",
+          "additionalItems": false,
+          "optional": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+
+              "name": {
+                "type": "string",
+                "description": "Name of the skillset: 'Programming' or 'Project Management' etc.",
+                "required": true
+              },
+
+              "level": {
+                "type": "string",
+                "description": "Level of mastery of the skill."
+              },
+
+              "skills": {
+                "type": "array",
+                "additionalItems": false,
+                "required": true,
+                "items": {
+                  "type": "string",
+                  "description": "Title or ID of a skill from the skills list."
+                }
+              }
+            }
+          }
+        },
+
+        "list": {
+          "type": "array",
+          "additionalItems": false,
+
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+
+              "name": {
+                "type": "string",
+                "description": "The name or title of the skill.",
+                "required": true
+              },
+
+              "level": {
+                "type": "string",
+                "description": "A freeform description of your level of mastery with the skill."
+              },
+
+              "summary": {
+                "type": "string",
+                "description": "A short summary of your experience with this skill."
+              },
+
+              "years": {
+                "type": ["string", "number"],
+                "description": "Number of years you've used the skill."
+              }
+            }
+          }
+        }
+
+      }
+    },
+
+
+    "service": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+
+        "summary": {
+          "type": "string",
+          "description": "Summary of overall service/volunteer experience."
+        },
+
+        "history": {
+          "type": "array",
+          "additionalItems": false,
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+
+              "flavor": {
+                "type": "string",
+                "description": "The type of service work, such as volunteer or military."
+              },
+
+              "organization": {
+                "type": "string",
+                "description": "The service organization, such as Red Cross or National Guard.",
+                "required": true
+              },
+
+              "position": {
+                "type": "string",
+                "description": "Your position or formal service role.",
+                "required": true
+              },
+
+              "url": {
+                "type": "string",
+                "description": "Organization website.",
+                "format": "uri"
+              },
+
+              "start": {
+                "type": "string",
+                "description": "Date you joined the organization, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+                "format": "date",
+                "required": true
+              },
+
+              "end": {
+                "type": "string",
+                "description": "Date you left the organization, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+                "format": "date"
+              },
+
+              "summary": {
+                "type": "string",
+                "description": "A summary of your achievements and responsibilities at this organization."
+              },
+
+              "highlights": {
+                "type": "array",
+                "description": "Noteworthy achievements and/or highlights.",
+                "additionalItems": false,
+                "items": {
+                  "type": "string",
+                  "description": "For ex, 'Served on board of directors of national non-profit organization with 20,000 members.'."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+
+    "education": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+
+        "summary": {
+          "type": "string",
+          "description:": "Summary of overall education."
+        },
+
+        "level": {
+          "type": "string",
+          "description": "Highest level of education obtained (none, diploma, some-college, degree).",
+          "required": true
+        },
+
+        "degree": {
+          "type": "string",
+          "description": "Your degree, if any (BSCS, BA, etc.)."
+        },
+
+        "history": {
+          "type": "array",
+          "additionalItems": false,
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+
+              "institution": {
+                "type": "string",
+                "description": "College or school name.",
+                "required": true
+              },
+
+              "area": {
+                "type": "string",
+                "description": "e.g. Arts"
+              },
+
+              "studyType": {
+                "type": "string",
+                "description": "e.g. Bachelor"
+              },
+
+              "start": {
+                "type": "string",
+                "description": "Date your schooling began, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+                "format": "date",
+                "required": true
+              },
+
+              "end": {
+                "type": "string",
+                "description": "Date your schooling ended, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+                "format": "date"
+              },
+
+              "grade": {
+                "type": "string",
+                "description": "Grade or GPA."
+              },
+
+              "curriculum": {
+                "type": "array",
+                "description": "Notable courses, subjects, and educational experiences.",
+                "additionalItems": false,
+                "items": {
+                  "type": "string",
+                  "description": "The course name and number or other identifying info."
+                }
+              },
+
+              "url": {
+                "type": "string",
+                "description": "Website or URL of the institution or school.",
+                "format": "uri"
+              },
+
+              "summary": {
+                "type": "string",
+                "description": "A short summary of this education experience."
+              }
+            }
+          }
+        }
+      }
+    },
+
+
+    "social": {
+      "type": "array",
+      "description": "Specify any number of social networks that you participate in",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+
+          "network": {
+            "type": "string",
+            "description": "The name of the social network, such as Facebook or GitHub.",
+            "required": true
+          },
+
+          "user": {
+            "type": "string",
+            "description": "Your username or handle on the social network.",
+            "required": true
+          },
+
+          "url": {
+            "type": "string",
+            "description": "URL of your profile page on this network.",
+            "format": "uri",
+            "required": true
+          },
+
+          "label": {
+            "type": "string",
+            "description": "A friendly label."
+          }
+        }
+      }
+    },
+
+
+    "recognition": {
+      "type": "array",
+      "description": "Public or professional recognition, kudos, and awards.",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+
+          "flavor": {
+            "type": "string",
+            "description": "Type of recognition: award, honor, prize, etc."
+          },
+
+          "title": {
+            "type": "string",
+            "description": "Title of the award or recognition.",
+            "required": true
+          },
+
+          "date": {
+            "type": "string",
+            "description": "Date awarded, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+            "format": "date",
+            "required": true
+          },
+
+          "from": {
+            "type": "string",
+            "description": "Name of the awarding company, insitution, or individual.",
+            "required": true
+          },
+
+          "summary": {
+            "type": "string",
+            "description": "A brief description of the award and why you received it."
+          },
+
+          "url": {
+            "type": "string",
+            "description": "A webpage or other associated URL.",
+            "format": "uri"
+          }
+        }
+      }
+    },
+
+
+    "writing": {
+      "type": "array",
+      "description": "Writing and publications.",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+
+          "title": {
+            "type": "string",
+            "description": "Title of the article, essay, or book.",
+            "required": true
+          },
+
+          "flavor": {
+            "type": "string",
+            "description": "One of 'book', 'article', 'essay', 'blog post', or 'series'."
+          },
+
+          "publisher": {
+            "type": ["object","string"],
+            "description": "Publisher of the article, essay, or book.",
+            "optional": true,
+            "additionalProperties": true,
+            "properties": {
+
+              "name": {
+                "type": "string",
+                "description": "Publisher of the article, essay, or book."
+              },
+              
+              "url": {
+                "type": "string",
+                "description": "Publisher website or URL."
+              }
+            }
+          },
+
+          "date": {
+            "type": "string",
+            "description": "Publication date in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+            "required": true
+          },
+
+          "url": {
+            "type": "string",
+            "description": "Website or URL of this writing or publication."
+          },
+
+          "summary": {
+            "type": "string",
+            "description": "A brief summary of the publication."
+          }
+        }
+      }
+    },
+
+    "reading": {
+      "type": "array",
+      "description": "Books, blogs, and magazines read.",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+
+          "title": {
+            "type": "string",
+            "description": "Title of the book, blog, or article."
+          },
+
+          "flavor": {
+            "type": "string",
+            "description": "One of: book, article, blog, magazine, series, etc."
+          },
+
+          "url": {
+            "type": "string",
+            "description": "URL of the book, blog, or article.",
+            "format": "uri"
+          },
+
+          "author": {
+            "type": ["string","array"],
+            "additionalItems": false,
+            "description": "Author of the book, blog, or article.",
+            "items": {
+              "type": "string",
+              "description": "Author name."
+            }
+          }
+        }
+      }
+    },
+
+    "languages": {
+      "type": "array",
+      "description": "Languages spoken by the candidate.",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+
+          "language": {
+            "type": "string",
+            "description": "The name of the language: English, Spanish, etc.",
+            "required": true
+          },
+
+          "level": {
+            "type": "string",
+            "description": "Level of fluency with the language, from 1 to 10."
+          },
+
+          "years": {
+            "type": ["string","number"],
+            "description": "Amount of time language spoken?"
+          }
+        }
+      }
+    },
+
+
+    "samples": {
+      "type": "array",
+      "description": "Work samples and portfolio pieces.",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+
+          "title": {
+            "type": "string",
+            "description": "Title or descriptive name.",
+            "required": true
+          },
+
+          "summary": {
+            "type": "string",
+            "description": "A brief description of the sample."
+          },
+
+          "url": {
+            "type": "string",
+            "description": "URL of the sample (if any).",
+            "format": "uri"
+          },
+
+          "date": {
+            "type": "string",
+            "description": "Date the sample was released in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+            "format": "date"
+          }
+        }
+      }
+    },
+
+
+    "references": {
+      "type": "array",
+      "description": "Your personal, professional, and/or technical references.",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+
+          "name": {
+            "type": "string",
+            "description": "The full name of the person giving the reference.",
+            "required": true
+          },
+
+          "contact": {
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+              "type": "object",
+              "additionalProperties": true,
+              "properties": {
+
+                "label": {
+                  "type": "string",
+                  "description": "Friendly label for this piece of contact info."
+                },
+
+                "flavor": {
+                  "type": "string",
+                  "description": "Flavor of contact information (phone, email, web, etc.)."
+                },
+
+                "value": {
+                  "type": "string",
+                  "description": "The email address, phone number, etc."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+
+    "testimonials": {
+      "type": "array",
+      "description": "Public testimonials of your work and character.",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+
+          "name": {
+            "type": "string",
+            "description": "The full name of the person giving the reference.",
+            "required": true
+          },
+
+          "quote": {
+            "type": "string",
+            "description": "A quoted reference, eg, 'Susan was an excellent team leader, manager, and operations specialist with a great eye for detail. I'd gladly hire her again if I could!'"
+          },
+
+          "flavor": {
+            "type": "string",
+            "description": "Type of reference: personal, professional, or technical."
+          },
+
+          "private": {
+            "type": "boolean",
+            "description": "Public reference (testimonial) or via private contact?"
+          }
+        }
+      }
+    },
+
+
+    "interests": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+
+          "name": {
+            "type": "string",
+            "description": "The name or title of the interest or hobby.",
+            "required": true
+          },
+
+          "summary": {
+            "type": "string"
+          },
+
+          "keywords": {
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "A keyword relating to this interest."
+            }
+          }
+        }
+      }
+    }
+  }
+}

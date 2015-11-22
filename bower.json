@@ -1,0 +1,26 @@
+{
+  "name": "FRESCA",
+  "version": "0.1.0",
+  "homepage": "https://github.com/fluentdesk/FRESCA",
+  "authors": [
+    "devlinjd <james@indevious.com>"
+  ],
+  "description": "The FRESH schema for resumes and CVs.",
+  "main": "schema/fresh-resume-schema.json",
+  "keywords": [
+    "resume",
+    "CV",
+    "FRESH",
+    "FluentCV",
+    "schema",
+    "JSON"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
