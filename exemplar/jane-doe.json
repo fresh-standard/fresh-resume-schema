@@ -302,6 +302,14 @@
     }
   ],
 
+  "speaking": [
+    {
+      "role": "Speaker",
+      "event": "OPENSTART 2013 Developer's Conference",
+      "date": "2014"
+    }
+  ],
+
   "recognition": [
     {
       "flavor": "award",

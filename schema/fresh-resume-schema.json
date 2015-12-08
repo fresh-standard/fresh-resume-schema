@@ -695,6 +695,31 @@
       }
     },
 
+    "speaking": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "role": {
+            "type": "string",
+            "description": "Speaker role: speaker, keynote, etc."
+          },
+          "event": {
+            "type": "string",
+            "description": "Event at which you presented."
+          },
+          "date": {
+            "type": "string",
+            "description": "Presentation date.",
+            "format": "date",
+            "required": true
+          }
+        }
+      }
+    },
+
     "languages": {
       "type": "array",
       "description": "Languages spoken by the candidate.",
