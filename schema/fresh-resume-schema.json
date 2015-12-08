@@ -630,7 +630,7 @@
                 "type": "string",
                 "description": "Publisher of the article, essay, or book."
               },
-              
+
               "url": {
                 "type": "string",
                 "description": "Publisher website or URL."
@@ -867,6 +867,41 @@
           }
         }
       }
+    },
+
+    "extracurricular": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the extracurricular activity."
+          },
+          "activity": {
+            "type": "string",
+            "description": "The extracurricular activity."
+          },
+          "location": {
+            "type": "string",
+            "description": "City, state, or other freeform location."
+          },
+          "start": {
+            "type": "string",
+            "description": "Start date.",
+            "format": "date",
+            "required": true
+          },
+          "end": {
+            "type": "string",
+            "description": "End date.",
+            "format": "date"
+          }
+        }
+      }
     }
+
   }
 }

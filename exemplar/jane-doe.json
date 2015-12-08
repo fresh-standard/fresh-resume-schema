@@ -370,6 +370,27 @@
     }
   ],
 
+  "extracurricular": [
+    {
+      "title": "Bay Area Crew Club",
+      "activity": "",
+      "location": "San Francisco, CA",
+      "start": "2014-05"
+    },
+    {
+      "title": "Organizer / Manager",
+      "activity": "JavaScript Game Development Meetup",
+      "location": "Austin, TX",
+      "start": "2011-03",
+      "end": "2014-01",
+      "highlights": [
+        "Monthly speaker on creative JavaScript development.",
+        "Founded group and oversaw growth to 500+ members."
+      ]
+
+    }
+  ],
+
   "interests": [
     {
       "name": "reading",
