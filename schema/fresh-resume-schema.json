@@ -720,6 +720,61 @@
       }
     },
 
+    "governance": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+
+          "summary": {
+            "type": "string",
+            "description": "Summary of your governance at this organization."
+          },
+
+          "flavor": {
+            "type": "string",
+            "description": "Type of governance: committee, board, standards group, etc."
+          },
+
+          "role": {
+            "type": "string",
+            "description": "Governance role: board member, contributor, director, etc."
+          },
+
+          "organization": {
+            "type": "string",
+            "description": "The organization."
+          },
+
+          "start": {
+            "type": "string",
+            "description": "Start date.",
+            "format": "date",
+            "required": true
+          },
+
+          "end": {
+            "type": "string",
+            "description": "End date.",
+            "format": "date"
+          },
+
+          "highlights": {
+            "type": "array",
+            "description": "Noteworthy achievements and/or highlights.",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "For ex, 'Led 5-person development team, increasing profits by 50% year-over-year'."
+            }
+          }
+
+        }
+      }
+    },
+
     "languages": {
       "type": "array",
       "description": "Languages spoken by the candidate.",

@@ -399,6 +399,28 @@
     }
   ],
 
+  "governance": [
+    {
+      "flavor": "board",
+      "role": "Member",
+      "organization": "The Mommies Network",
+      "url": "http://themommiesnetwork.org",
+      "start": "2008-02",
+      "end": "2010-01",
+      "summary": "Since 2008 I've been a full-time member of the board of directors for TMN."
+    },
+    {
+      "flavor": "committee",
+      "role": "Academic Contributor",
+      "organization": "Khronos Group",
+      "url": "https://www.khronos.org",
+      "start": "2015-01",
+      "highlights": [
+        "Participated in GORFF standardization process (Draft 2)."
+      ]
+    }
+  ],
+
   "interests": [
     {
       "name": "reading",
