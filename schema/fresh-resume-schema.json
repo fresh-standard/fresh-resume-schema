@@ -706,19 +706,33 @@
         "type": "object",
         "additionalProperties": true,
         "properties": {
-          "role": {
+          "title": {
             "type": "string",
-            "description": "Speaker role: speaker, keynote, etc."
+            "description": "Speaking engagement title.",
+            "required": true
           },
           "event": {
             "type": "string",
             "description": "Event at which you presented."
+          },
+          "location": {
+            "type": "string",
+            "description": "Freeform location of the event."
           },
           "date": {
             "type": "string",
             "description": "Presentation date.",
             "format": "date",
             "required": true
+          },
+          "highlights": {
+            "type": "array",
+            "description": "Noteworthy achievements and/or highlights.",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "For ex, 'Won 'Best Speaker' award at 2012 E3 expo'."
+            }
           }
         }
       }

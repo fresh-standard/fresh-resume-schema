@@ -305,9 +305,14 @@
 
   "speaking": [
     {
+      "title": "Data Warehousing Evolved: DARMA 2.0",
       "role": "Speaker",
       "event": "OPENSTART 2013 Developer's Conference",
-      "date": "2014"
+      "location": "Portland, OR",
+      "date": "2012",
+      "highlights": [
+        "Won 'Best Presentation on an Emerging Technical Field' prize."
+      ]
     }
   ],
 
