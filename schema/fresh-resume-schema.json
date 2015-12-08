@@ -49,6 +49,10 @@
         "brief": {
           "type": "string",
           "description": "A short description or summary of yourself as a candidate."
+        },
+        "quote": {
+          "type": "string",
+          "description": "Candidate quote or byline."
         }
       }
     },
