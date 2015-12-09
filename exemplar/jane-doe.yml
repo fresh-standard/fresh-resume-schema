@@ -8,6 +8,7 @@
     characterClass: "Programmer"
     brief: "**Full-stack software developer with 6+ years industry experience** specializing in scalable cloud architectures for this, that, and the other. A native of southern CA, Jane enjoys hiking, mystery novels, and the company of Rufus, her two-year-old beagle."
     image: "jane_doe.png"
+    quote: "Be the change you want to see in the world."
   contact:
     website: "http://jane-doe.me"
     phone: "1-650-999-7777"
@@ -259,6 +260,15 @@
       flavor: "blog"
       url: "http://www.codinghorror.com"
       author: "Jeff Atwood"
+  speaking:
+    -
+      title: "Data Warehousing Evolved: DARMA 2.0"
+      role: "Speaker"
+      event: "OPENSTART 2013 Developer's Conference"
+      location: "Portland, OR"
+      date: "2012"
+      highlights:
+        - "Won 'Best Presentation on an Emerging Technical Field' prize."
   recognition:
     -
       flavor: "award"
@@ -308,6 +318,38 @@
       language: "Spanish"
       level: "Moderate"
       years: 10
+  extracurricular:
+    -
+      title: "Bay Area Crew Club"
+      activity: ""
+      location: "San Francisco, CA"
+      start: "2014-05"
+    -
+      title: "Organizer / Manager"
+      activity: "JavaScript Game Development Meetup"
+      location: "Austin, TX"
+      start: "2011-03"
+      end: "2014-01"
+      highlights:
+        - "Monthly speaker on creative JavaScript development."
+        - "Founded group and oversaw growth to 500+ members."
+  governance:
+    -
+      flavor: "board"
+      role: "Member"
+      organization: "The Mommies Network"
+      url: "http://themommiesnetwork.org"
+      start: "2008-02"
+      end: "2010-01"
+      summary: "Since 2008 I've been a full-time member of the board of directors for TMN."
+    -
+      flavor: "committee"
+      role: "Academic Contributor"
+      organization: "Khronos Group"
+      url: "https://www.khronos.org"
+      start: "2015-01"
+      highlights:
+        - "Participated in GORFF standardization process (Draft 2)."
   interests:
     -
       name: "reading"
