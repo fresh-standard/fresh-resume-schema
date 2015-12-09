@@ -258,6 +258,11 @@
                 "items": {
                   "type": "string",
                   "description": "For ex, 'Led 5-person development team, increasing profits by 50% year-over-year'."
+                },
+
+                "location": {
+                  "type": "string",
+                  "description": "Freeform location of the job or position, e.g., 'San Francisco, CA' or 'Tokyo'."
                 }
               },
 
@@ -420,6 +425,11 @@
                   "type": "string",
                   "description": "For ex, 'Served on board of directors of national non-profit organization with 20,000 members.'."
                 }
+              },
+
+              "location": {
+                "type": "string",
+                "description": "Freeform location of the position, e.g., 'San Francisco, CA' or 'Tokyo'."
               }
             }
           }
@@ -510,6 +520,11 @@
               "summary": {
                 "type": "string",
                 "description": "A short summary of this education experience."
+              },
+
+              "location": {
+                "type": "string",
+                "description": "Freeform location of the education, e.g., 'San Francisco, CA' or 'Tokyo'."
               }
             }
           }
@@ -717,7 +732,7 @@
           },
           "location": {
             "type": "string",
-            "description": "Freeform location of the event."
+            "description": "Freeform location of the event, e.g., 'San Francisco, CA' or 'Tokyo'."
           },
           "date": {
             "type": "string",
