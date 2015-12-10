@@ -1,11 +1,26 @@
 FRESCA
 ======
-*The FRESH Resume & Employment Schema*
+*The FRESH Résumé & Employment Schema*
 
-The [FRESH][fresh] resume schema, aka FRESCA, is an open source, standards-friendly,
-JSON/YAML-driven standard for resumes / CVs and other employment artifacts.
-It establishes an optimized, human-readable, computer-friendly representation
-for resume and career data based on JSON or equivalent YAML.
+The [FRESH][fresh] résumé schema is an open source, standards-friendly,
+JSON/YAML-driven format for résumé / CVs and other employment artifacts. It's
+similar to (and compatible with) nascent industry standards like [JSON
+Resume][jrs] or [StackOverflow Careers][soc], but optimized for technical
+candidates or anyone who likes to geek out over resume and career management
+(RACM).
+
+- [**View the official FRESH reference schema document.**][schema]
+- [**View a sample FRESH resume.**][exemplar]
+
+FRESH is supported as a native format by both [FluentCV Desktop][fluentcv] and
+[Command Line][npm]. Additionally, FRESH resumes can be trivially converted to
+JRS format, allowing use of the full lineup of JRS tools.
+
+## What It Does
+
+FRESCA establishes an optimized, human-readable, computer-friendly
+representation for your résumé and career data based on JSON or equivalent
+YAML...
 
 ```js
 // Pared-down FRESH/FRESCA resume representation (JSON)
@@ -14,46 +29,60 @@ for resume and career data based on JSON or equivalent YAML.
   "info": { /* Basic info */ },
   "contact": { /* Contact information */ },
   "location": { /* Location / address */ },
+  "meta": { /* Resume metadata */ },  
   "employment": { /* Employment history */ },
   "skills": [ /* Skills and technologies */ ],
   "education": { /* Schools, training, certifications */ },
   "service": { /* Volunteer, military, civilian service */ },
-  "writing": { /* Writing, blogging, and publications */ },
-  "recognition": { /* Awards and commendations */ },
+  "writing": [ /* Writing, blogging, and publications */ ],
+  "reading": [ /* Books and publication a la StackOverflow Careers */ ],
+  "speaking": [ /* Writing, blogging, and publications */ ],
+  "governance": [ /* Board memberships, committees, standards groups */ ],
+  "recognition": [ /* Awards and commendations */ ],
   "samples": [ /* Work samples and portfolio pieces */ ],
   "social": [ /* Social networking & engagement */ ],
   "references": [ /* Candidate references */ ],
   "testimonials": [ /* Public candidate testimonials */ ],  
-  "interests": [ /* Interests & hobbies */ ],
-  "meta": { /* Resume metadata */ }
+  "extracurricular": [ /* Interests & hobbies */ ],
+  "interests": [ /* Interests & hobbies */ ]
 }
 ```
 
-FRESCA is compatible with but does not require [FRESH][fresh]. It is an
-abstract, standalone representational schema for employment artifacts. FRESCA is
-used by [FluentCV][fluentcv], [FCV:CLI][cli], and can be converted to and from
-[JSON Resume][jrs] format without losing data.
+..which you can use to generate resumes and other career artifacts in specific
+concrete formats...
 
-## Contents
+- HTML
+- Markdown
+- LaTeX
+- MS Word
+- PDF
+- YAML
+- JSON
+- XML
+- plain text
 
-The official FRESH reference schema document for standard resumes:
+...as well as enable 21st-century analysis of your resume and career data...
 
-- [**/schema/fresh-resume-schema.json**][schema]
+![](http://fluentdesk.com/img/fluentcv_desktop.png)
 
-Sample exemplar resumes based on the above schema, in JSON and YAML formats:
+...in a way that's not possible with traditional, 20th-century resume formats.
 
-- [**/exemplar/**][exemplar]
+## Anatomy of a FRESH Resume
 
-Other files:
+FRESCA resumes are:
 
-- `README.md`: This file.
-- `package.json`: For installing the FRESH schema as an NPM dependency.
-- `bower.json`: For installing FRESH schema as a Bower dependency.
-- `LICENSE.md`: MIT license.
+- Text-based.
+- Versionable.
+- Standards-compliant.
+- Human-readable/editable.
+- Computer-friendly / easily parsable by tools.
+- Built from JSON or equivalent YAML.
+- Used to generate specific formats like HTML, PDF, or LaTeX.
+- Free from proprietary structures or site- and/or tool-specific lock-in.
 
 ## License
 
-The FRESH resume schema is licensed under MIT.
+The FRESH resume schema is licensed under MIT. Go crazy.
 
 [fresh]: https://github.com/fluentdesk/FRESH
 [schema]: schema/fresh-resume-schema.json
@@ -61,3 +90,5 @@ The FRESH resume schema is licensed under MIT.
 [fluentcv]: http://fluentdesk.com/fluentcv
 [jrs]: http://jsonresume.org
 [exemplar]: exemplar
+[soc]: http://careers.stackoverflow.com/
+[npm]: https://www.npmjs.com/package/fluentcv
