@@ -49,6 +49,10 @@
         "brief": {
           "type": "string",
           "description": "A short description or summary of yourself as a candidate."
+        },
+        "quote": {
+          "type": "string",
+          "description": "Candidate quote or byline."
         }
       }
     },
@@ -254,6 +258,11 @@
                 "items": {
                   "type": "string",
                   "description": "For ex, 'Led 5-person development team, increasing profits by 50% year-over-year'."
+                },
+
+                "location": {
+                  "type": "string",
+                  "description": "Freeform location of the job or position, e.g., 'San Francisco, CA' or 'Tokyo'."
                 }
               },
 
@@ -416,6 +425,11 @@
                   "type": "string",
                   "description": "For ex, 'Served on board of directors of national non-profit organization with 20,000 members.'."
                 }
+              },
+
+              "location": {
+                "type": "string",
+                "description": "Freeform location of the position, e.g., 'San Francisco, CA' or 'Tokyo'."
               }
             }
           }
@@ -506,6 +520,11 @@
               "summary": {
                 "type": "string",
                 "description": "A short summary of this education experience."
+              },
+
+              "location": {
+                "type": "string",
+                "description": "Freeform location of the education, e.g., 'San Francisco, CA' or 'Tokyo'."
               }
             }
           }
@@ -630,7 +649,7 @@
                 "type": "string",
                 "description": "Publisher of the article, essay, or book."
               },
-              
+
               "url": {
                 "type": "string",
                 "description": "Publisher website or URL."
@@ -691,6 +710,100 @@
               "description": "Author name."
             }
           }
+        }
+      }
+    },
+
+    "speaking": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Speaking engagement title.",
+            "required": true
+          },
+          "event": {
+            "type": "string",
+            "description": "Event at which you presented."
+          },
+          "location": {
+            "type": "string",
+            "description": "Freeform location of the event, e.g., 'San Francisco, CA' or 'Tokyo'."
+          },
+          "date": {
+            "type": "string",
+            "description": "Presentation date.",
+            "format": "date",
+            "required": true
+          },
+          "highlights": {
+            "type": "array",
+            "description": "Noteworthy achievements and/or highlights.",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "For ex, 'Won 'Best Speaker' award at 2012 E3 expo'."
+            }
+          }
+        }
+      }
+    },
+
+    "governance": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+
+          "summary": {
+            "type": "string",
+            "description": "Summary of your governance at this organization."
+          },
+
+          "flavor": {
+            "type": "string",
+            "description": "Type of governance: committee, board, standards group, etc."
+          },
+
+          "role": {
+            "type": "string",
+            "description": "Governance role: board member, contributor, director, etc."
+          },
+
+          "organization": {
+            "type": "string",
+            "description": "The organization."
+          },
+
+          "start": {
+            "type": "string",
+            "description": "Start date.",
+            "format": "date",
+            "required": true
+          },
+
+          "end": {
+            "type": "string",
+            "description": "End date.",
+            "format": "date"
+          },
+
+          "highlights": {
+            "type": "array",
+            "description": "Noteworthy achievements and/or highlights.",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "For ex, 'Led 5-person development team, increasing profits by 50% year-over-year'."
+            }
+          }
+
         }
       }
     },
@@ -867,6 +980,41 @@
           }
         }
       }
+    },
+
+    "extracurricular": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the extracurricular activity."
+          },
+          "activity": {
+            "type": "string",
+            "description": "The extracurricular activity."
+          },
+          "location": {
+            "type": "string",
+            "description": "City, state, or other freeform location."
+          },
+          "start": {
+            "type": "string",
+            "description": "Start date.",
+            "format": "date",
+            "required": true
+          },
+          "end": {
+            "type": "string",
+            "description": "End date.",
+            "format": "date"
+          }
+        }
+      }
     }
+
   }
 }
