@@ -76,5 +76,4 @@ The FRESH resume schema is licensed under MIT. Go crazy.
 [fluentcv]: http://fluentdesk.com/fluentcv
 [jrs]: http://jsonresume.org
 [exemplar]: https://github.com/fluentdesk/jane-q-fullstacker/blob/master/resume/jane-resume.json
-[soc]: http://careers.stackoverflow.com/
 [npm]: https://www.npmjs.com/package/fluentcv
