@@ -48,7 +48,7 @@ YAML...
 concrete formats (HTML, LaTeX, Markdown, PDF, etc.) as well as enable
 21st-century analysis of your resume and career data...
 
-![](http://fluentdesk.com/img/fluentcv_desktop.png)
+![](http://fluentdesk.com/img/fluentcv_desktop_alpha.png)
 
 ...in a way that's not possible with traditional, 20th-century resume tools and
 formats.
