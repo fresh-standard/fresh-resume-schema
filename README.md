@@ -3,18 +3,14 @@ FRESCA
 *The FRESH Résumé & Employment Schema*
 
 The [FRESH][fresh] résumé schema is an open source, standards-friendly,
-JSON/YAML-driven format for résumé / CVs and other employment artifacts. It's
-similar to proprietary industry formats like JSON Resume or StackOverflow
-Careers, but unaffiliated with corporate interests and free of site-specific or
-tool-specific lock-in. FRESH is a user-first standard optimized for technical
-candidates or anyone who likes to geek out over resume and career management
-(RACM)&mdash;not a commercial vehicle.
+JSON/YAML-driven format for résumé / CVs and other employment artifacts.
 
 - [**View the official FRESH reference schema document.**][schema]
 - [**View a sample FRESH resume.**][exemplar]
 
 FRESH is supported as a native format by both [FluentCV Desktop][fluentcv] and
-[Command Line][npm].
+[Command Line][npm] and can be trivially converted to and from
+[JSON Resume][jrs].
 
 ## What It Does
 
@@ -65,7 +61,8 @@ concrete formats...
 
 ![](http://fluentdesk.com/img/fluentcv_desktop.png)
 
-...in a way that's not possible with traditional, 20th-century resume formats.
+...in a way that's not possible with traditional, 20th-century resume tools and
+formats.
 
 ## Anatomy of a FRESH Resume
 
