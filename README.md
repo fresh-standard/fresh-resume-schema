@@ -45,19 +45,8 @@ YAML...
 ```
 
 ..which you can use to generate resumes and other career artifacts in specific
-concrete formats...
-
-- HTML
-- Markdown
-- LaTeX
-- MS Word
-- PDF
-- YAML
-- JSON
-- XML
-- plain text
-
-...as well as enable 21st-century analysis of your resume and career data...
+concrete formats (HTML, LaTeX, Markdown, PDF, etc.) as well as enable
+21st-century analysis of your resume and career data...
 
 ![](http://fluentdesk.com/img/fluentcv_desktop.png)
 
