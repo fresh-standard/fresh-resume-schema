@@ -258,6 +258,7 @@
                 "items": {
                   "type": "string",
                   "description": "For ex, 'Led 5-person development team, increasing profits by 50% year-over-year'."
+                }
               },
 
               "location": {
