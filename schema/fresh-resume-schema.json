@@ -258,12 +258,11 @@
                 "items": {
                   "type": "string",
                   "description": "For ex, 'Led 5-person development team, increasing profits by 50% year-over-year'."
-                },
+              },
 
-                "location": {
-                  "type": "string",
-                  "description": "Freeform location of the job or position, e.g., 'San Francisco, CA' or 'Tokyo'."
-                }
+              "location": {
+                "type": "string",
+                "description": "Freeform location of the job or position, e.g., 'San Francisco, CA' or 'Tokyo'."
               },
 
               "keywords": {
