@@ -282,6 +282,94 @@
     },
 
 
+
+    "projects": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+
+          "title": {
+            "type": "string",
+            "description": "Project name or code-name.",
+            "required": true
+          },
+
+          "category": {
+            "type": "string",
+            "description": "Project type: open-source, private, side project, etc.",
+            "required": true
+          },
+
+          "description": {
+            "type": "string",
+            "description": "Project description or summary."
+          },
+
+          "summary": {
+            "type": "string",
+            "description": "A summary of your achievements and responsibilities on the project."
+          },
+
+          "role": {
+            "type": "string",
+            "description": "Your role on the project: Contributor, Creator, etc.",
+            "required": true
+          },
+
+          "url": {
+            "type": "string",
+            "description": "Project URL.",
+            "format": "uri"
+          },
+
+          "start": {
+            "type": "string",
+            "description": "Date your involvement with project began, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+            "format": "date",
+            "required": true
+          },
+
+          "end": {
+            "type": "string",
+            "description": "Date your involvement with project ended, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+            "format": "date"
+          },
+
+          "highlights": {
+            "type": "array",
+            "description": "Noteworthy project-related achievements and/or highlights.",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "For ex, 'Led 5-person development team, increasing profits by 50% year-over-year'."
+            }
+          },
+
+          "location": {
+            "type": "string",
+            "description": "Freeform location of the job or position, e.g., 'San Francisco, CA' or 'Tokyo'."
+          },
+
+          "keywords": {
+            "type": "array",
+            "description": "Skills and/or keywords used on this project.",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "For example, C++, HTML, HIPAA, etc."
+            }
+          }
+        }
+      }
+    },
+
+
+
+
+
     "skills": {
       "type": "object",
       "description": "List of professional skills and technologies.",
