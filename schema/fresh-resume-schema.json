@@ -325,6 +325,12 @@
             "format": "uri"
           },
 
+          "repo": {
+            "type": "string",
+            "description": "Repo URL.",
+            "format": "uri"
+          },
+
           "start": {
             "type": "string",
             "description": "Date your involvement with project began, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
