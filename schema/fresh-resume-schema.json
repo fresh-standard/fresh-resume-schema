@@ -6,11 +6,13 @@
   "properties": {
 
 
+
     "name": {
       "type": "string",
       "description": "Your name as it should appear on the resume.",
       "required": true
     },
+
 
 
     "meta": {
@@ -27,6 +29,7 @@
         }
       }
     },
+
 
 
     "info": {
@@ -56,6 +59,7 @@
         }
       }
     },
+
 
 
     "disposition": {
@@ -113,6 +117,7 @@
     },
 
 
+
     "contact": {
       "type": "object",
       "additionalProperties": true,
@@ -164,6 +169,7 @@
     },
 
 
+
     "location": {
       "type": "object",
       "additionalProperties": true,
@@ -195,6 +201,7 @@
         }
       }
     },
+
 
 
     "employment": {
@@ -399,8 +406,6 @@
 
 
 
-
-
     "skills": {
       "type": "object",
       "description": "List of professional skills and technologies.",
@@ -475,6 +480,7 @@
 
       }
     },
+
 
 
     "service": {
@@ -555,6 +561,7 @@
         }
       }
     },
+
 
 
     "education": {
@@ -652,6 +659,7 @@
     },
 
 
+
     "social": {
       "type": "array",
       "description": "Specify any number of social networks that you participate in",
@@ -687,6 +695,7 @@
         }
       }
     },
+
 
 
     "recognition": {
@@ -735,6 +744,7 @@
         }
       }
     },
+
 
 
     "writing": {
@@ -795,6 +805,8 @@
       }
     },
 
+
+
     "reading": {
       "type": "array",
       "description": "Books, blogs, and magazines read.",
@@ -832,6 +844,8 @@
         }
       }
     },
+
+
 
     "speaking": {
       "type": "array",
@@ -871,6 +885,8 @@
         }
       }
     },
+
+
 
     "governance": {
       "type": "array",
@@ -927,6 +943,8 @@
       }
     },
 
+
+
     "languages": {
       "type": "array",
       "description": "Languages spoken by the candidate.",
@@ -954,6 +972,7 @@
         }
       }
     },
+
 
 
     "samples": {
@@ -990,6 +1009,7 @@
         }
       }
     },
+
 
 
     "references": {
@@ -1037,6 +1057,7 @@
     },
 
 
+
     "testimonials": {
       "type": "array",
       "description": "Public testimonials of your work and character.",
@@ -1071,6 +1092,7 @@
     },
 
 
+
     "interests": {
       "type": "array",
       "additionalItems": false,
@@ -1100,6 +1122,8 @@
         }
       }
     },
+
+
 
     "extracurricular": {
       "type": "array",
@@ -1134,6 +1158,8 @@
         }
       }
     }
+
+
 
   }
 }
