@@ -27,6 +27,7 @@ YAML...
   "location": { /* Location / address */ },
   "meta": { /* Resume metadata */ },  
   "employment": { /* Employment history */ },
+  "projects": [ /* Project history */ ],
   "skills": [ /* Skills and technologies */ ],
   "education": { /* Schools, training, certifications */ },
   "service": { /* Volunteer, military, civilian service */ },
