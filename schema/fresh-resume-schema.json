@@ -325,6 +325,31 @@
             "format": "uri"
           },
 
+          "media": {
+            "type": "array",
+            "additionalItems": false,
+            "description": "Media associated with this project.",
+            "items": {
+              "type": "object",
+              "additionalProperties": true,
+              "properties": {
+                "category": {
+                  "type": "string",
+                  "description": "Media category: image, thumbnail, screenshot, MP3, download, etc.",
+                  "required": true
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Friendly media name."
+                },
+                "url": {
+                  "type": "string",
+                  "description": "Media link, path, or location."
+                }
+              }
+            }
+          },
+
           "repo": {
             "type": "string",
             "description": "Repo URL.",
