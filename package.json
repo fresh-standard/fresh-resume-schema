@@ -1,6 +1,6 @@
 {
   "name": "fresca",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "The FRESH schema for resumes and CVs.",
   "repository": {
     "type": "git",
