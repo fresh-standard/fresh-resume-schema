@@ -366,8 +366,7 @@
           "start": {
             "type": "string",
             "description": "Date your involvement with project began, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
-            "format": "date",
-            "required": true
+            "format": "date"
           },
 
           "end": {
