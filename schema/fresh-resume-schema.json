@@ -592,6 +592,11 @@
             "additionalProperties": true,
             "properties": {
 
+              "title": {
+                "type": "string",
+                "description": "A freeform title for this education stint. Typically, this should be the short name of your degree, certification, or training."
+              },
+
               "institution": {
                 "type": "string",
                 "description": "College or school name.",
