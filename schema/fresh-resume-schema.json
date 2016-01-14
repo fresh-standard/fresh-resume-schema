@@ -1031,6 +1031,26 @@
             "required": true
           },
 
+          "role": {
+            "type": "string",
+            "description": "The occupation of this reference, or his or her relationship to the candidate."
+          },
+
+          "category": {
+            "type": "string",
+            "description": "The type of reference, eg, professional, technical, or personal."
+          },
+
+          "private": {
+            "type": "boolean",
+            "description": "Is this a private reference?"
+          },
+
+          "summary": {
+            "type": "string",
+            "description": "Optional summary information for this reference."
+          },
+
           "contact": {
             "type": "array",
             "additionalItems": false,
