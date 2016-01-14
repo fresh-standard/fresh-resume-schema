@@ -1223,14 +1223,12 @@
 
               "organization": {
                 "type": "string",
-                "description": "The name of the organization or group.",
-                "required": true
+                "description": "The name of the organization or group."
               },
 
               "role": {
                 "type": "string",
-                "description": "Your role in the organization or group.",
-                "required": true
+                "description": "Your role in the organization or group."
               },
 
               "url": {
@@ -1242,8 +1240,7 @@
               "start": {
                 "type": "string",
                 "description": "Date your affiliation with the organization began, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
-                "format": "date",
-                "required": true
+                "format": "date"
               },
 
               "end": {
