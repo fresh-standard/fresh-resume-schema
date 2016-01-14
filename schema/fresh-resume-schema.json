@@ -9,7 +9,7 @@
 
     "name": {
       "type": "string",
-      "description": "Your name as it should appear on the resume.",
+      "description": "The candidate's name as it should appear on the resume.",
       "required": true
     },
 
@@ -18,6 +18,7 @@
     "meta": {
       "type": "object",
       "additionalProperties": true,
+      "description": "The 'meta' section contains metadata information for the resume, including the resume version, schema, and any other fields required by tools.",
       "properties": {
         "format": {
           "type": "string",
@@ -35,6 +36,7 @@
     "info": {
       "type": "object",
       "additionalProperties": true,
+      "description": "The 'info' section contains basic summary information for the candidate, including an optional label or job title, candidate photo, summary, and quote.",
       "required": true,
       "properties": {
         "label": {
@@ -65,6 +67,7 @@
     "disposition": {
       "type": "object",
       "additionalProperties": true,
+      "description": "The disposition section describes the candidate's overall attitude towards new employment opportunities including: travel, relocation, schedule, desired type of work, and the like.",
       "properties": {
 
         "travel": {
@@ -121,6 +124,7 @@
     "contact": {
       "type": "object",
       "additionalProperties": true,
+      "description": "The 'contact' section contains the candidate's contact information, including phone numbers, emails, websites, IMs, and custom contact types.",
       "properties": {
 
         "email": {
@@ -172,6 +176,7 @@
 
     "location": {
       "type": "object",
+      "description": "The 'location' section, when present, contains the candidate's location and address info.",
       "additionalProperties": true,
       "properties": {
 
@@ -206,6 +211,7 @@
 
     "employment": {
       "type": "object",
+      "description": "The 'employment' section describes the candidate's formal employment history.",
       "additionalProperties": true,
       "properties": {
 
@@ -293,6 +299,7 @@
     "projects": {
       "type": "array",
       "additionalItems": false,
+      "description": "The 'projects' section describes the candidate's project history -- not the jobs the candidate has worked but the specific projects and enterprises the candidate has created or been involved in, whether paid or unpaid.",
       "items": {
         "type": "object",
         "additionalProperties": true,
@@ -407,7 +414,7 @@
 
     "skills": {
       "type": "object",
-      "description": "List of professional skills and technologies.",
+      "description": "A description of the candidate's formal skills and capabilities.",
       "additionalProperties": true,
       "properties": {
 
@@ -484,6 +491,7 @@
 
     "service": {
       "type": "object",
+      "description": "The 'service' section describes the candidate's overall service history in the true sense of the word 'service': volunteer work, military participation, civilian core, rescue and emergency services, and the like.",
       "additionalProperties": true,
       "properties": {
 
@@ -566,6 +574,7 @@
     "education": {
       "type": "object",
       "additionalProperties": true,
+      "description": "The 'employment' section describes the candidate's formal education, including college and university, continuing education, and standalone programs and courses.",
       "properties": {
 
         "summary": {
@@ -666,7 +675,7 @@
 
     "social": {
       "type": "array",
-      "description": "Specify any number of social networks that you participate in",
+      "description": "The 'social' section describes the candidate's participation in internet and social networking services and communities including GitHub, FaceBook, and the like.",
       "additionalItems": false,
       "items": {
         "type": "object",
@@ -704,7 +713,7 @@
 
     "recognition": {
       "type": "array",
-      "description": "Public or professional recognition, kudos, and awards.",
+      "description": "The 'recognition' section describes the candidate's public or professional plaudits, kudos, awards, and other forms of positive external reinforcement.",
       "additionalItems": false,
       "items": {
         "type": "object",
@@ -753,7 +762,7 @@
 
     "writing": {
       "type": "array",
-      "description": "Writing and publications.",
+      "description": "The 'writing' section describes the candidate's writing and publication history, from blogs and essays to novels and dissertations.",
       "additionalItems": false,
       "items": {
         "type": "object",
@@ -813,7 +822,7 @@
 
     "reading": {
       "type": "array",
-      "description": "Books, blogs, and magazines read.",
+      "description": "The 'reading' section describes the candidate's reading habits and is intended to demonstrate familiarity with industry-relevant publications, blogs, books, or other media that a competent industry candidate should be expected to know.",
       "additionalItems": false,
       "items": {
         "type": "object",
@@ -854,6 +863,7 @@
     "speaking": {
       "type": "array",
       "additionalItems": false,
+      "section": "The 'speaking' section describes the candidate's speaking engagements and presentations.",
       "items": {
         "type": "object",
         "additionalProperties": true,
@@ -895,6 +905,7 @@
     "governance": {
       "type": "array",
       "additionalItems": false,
+      "description": "The 'governance' section describes the candidate's leadership, standards, board, and committee roles.",
       "items": {
         "type": "object",
         "additionalProperties": true,
@@ -951,7 +962,7 @@
 
     "languages": {
       "type": "array",
-      "description": "Languages spoken by the candidate.",
+      "description": "The 'languages' section describes the candidate's knowledge of world languages such as English, Spanish, or Chinese.",
       "additionalItems": false,
       "items": {
         "type": "object",
@@ -981,7 +992,7 @@
 
     "samples": {
       "type": "array",
-      "description": "Work samples and portfolio pieces.",
+      "description": "The 'samples' section provides an accessible demonstration of the candidate's portfolio or work product to potential employers and co-workers.",
       "additionalItems": false,
       "items": {
         "type": "object",
@@ -1018,7 +1029,7 @@
 
     "references": {
       "type": "array",
-      "description": "Your personal, professional, and/or technical references.",
+      "description": "The 'references' section describes the candidate's personal, professional, and/or technical references.",
       "additionalItems": false,
       "items": {
         "type": "object",
@@ -1084,7 +1095,7 @@
 
     "testimonials": {
       "type": "array",
-      "description": "Public testimonials of your work and character.",
+      "description": "The 'testimonials' section contains public testimonials of the candidate's professionalism and character.",
       "additionalItems": false,
       "items": {
         "type": "object",
@@ -1120,6 +1131,7 @@
     "interests": {
       "type": "array",
       "additionalItems": false,
+      "description": "The 'interests' section provides a sampling of the candidate's interests and enthusiasms outside of work.",
       "items": {
         "type": "object",
         "additionalProperties": true,
@@ -1151,6 +1163,7 @@
 
     "extracurricular": {
       "type": "array",
+      "description": "The 'extracurricular' section describes the candidate's involvement with industry-related events and enterprises outside of work. For example: attending conferences, workshops, or meetups.",
       "additionalItems": false,
       "items": {
         "type": "object",
