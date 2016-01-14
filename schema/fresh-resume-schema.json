@@ -1194,9 +1194,89 @@
           }
         }
       }
+    },
+
+
+    "affiliation": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "The 'affiliation' section describes the candidate's membership in groups, clubs, organizations, and professional associations whether at the collegiate, corporate, or personal level.",
+      "properties": {
+
+        "summary": {
+          "type": "string",
+          "description": "Optional summary of overall affiliation and membership experience."
+        },
+
+        "history": {
+          "type": "array",
+          "additionalItems": false,
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+
+              "category": {
+                "type": "string",
+                "description": "The type of affiliation: club, union, meetup, etc."
+              },
+
+              "organization": {
+                "type": "string",
+                "description": "The name of the organization or group.",
+                "required": true
+              },
+
+              "position": {
+                "type": "string",
+                "description": "Your role in the organization or group.",
+                "required": true
+              },
+
+              "url": {
+                "type": "string",
+                "description": "Organization website.",
+                "format": "uri"
+              },
+
+              "start": {
+                "type": "string",
+                "description": "Date your affiliation with the organization began, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+                "format": "date",
+                "required": true
+              },
+
+              "end": {
+                "type": "string",
+                "description": "Date your affiliation with the organization ended, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+                "format": "date"
+              },
+
+              "summary": {
+                "type": "string",
+                "description": "A summary of your achievements and responsibilities during this affiliation."
+              },
+
+              "highlights": {
+                "type": "array",
+                "description": "Noteworthy achievements and/or highlights.",
+                "additionalItems": false,
+                "items": {
+                  "type": "string",
+                  "description": "For ex, 'Served on board of directors of national non-profit organization with 20,000 members.'."
+                }
+              },
+
+              "location": {
+                "type": "string",
+                "description": "Freeform location of the position, e.g., 'San Francisco, CA' or 'Tokyo'."
+              }
+            }
+          }
+        }
+
+      }
     }
-
-
 
   }
 }
