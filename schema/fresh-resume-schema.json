@@ -1227,7 +1227,7 @@
                 "required": true
               },
 
-              "position": {
+              "role": {
                 "type": "string",
                 "description": "Your role in the organization or group.",
                 "required": true
