@@ -23,7 +23,8 @@
       "properties": {
         "format": {
           "type": "string",
-          "description": "The canonical resume format and version. Should be 'FRESH@0.1.0'."
+          "description": "The canonical resume format and version. Should be 'FRESH@0.1.0'.",
+          "required": true
         },
         "version": {
           "type": "string",
@@ -249,8 +250,7 @@
               "start": {
                 "type": "string",
                 "description": "Date you began work, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
-                "format": "date",
-                "required": true
+                "format": "date"
               },
 
               "end": {
@@ -313,8 +313,7 @@
 
           "category": {
             "type": "string",
-            "description": "Project type: open-source, private, side project, etc.",
-            "required": true
+            "description": "Project type: open-source, private, side project, etc."
           },
 
           "description": {
@@ -534,8 +533,7 @@
               "start": {
                 "type": "string",
                 "description": "Date you joined the organization, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
-                "format": "date",
-                "required": true
+                "format": "date"
               },
 
               "end": {
@@ -613,7 +611,8 @@
 
               "title": {
                 "type": "string",
-                "description": "A freeform title for this education stint. Typically, this should be the short name of your degree, certification, or training."
+                "description": "A freeform title for this education stint. Typically, this should be the short name of your degree, certification, or training.",
+                "required": true,
               },
 
               "institution": {
@@ -764,8 +763,7 @@
           "date": {
             "type": "string",
             "description": "Date awarded, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
-            "format": "date",
-            "required": true
+            "format": "date"
           },
 
           "from": {
@@ -861,7 +859,8 @@
 
           "title": {
             "type": "string",
-            "description": "Title of the book, blog, or article."
+            "description": "Title of the book, blog, or article.",
+            "required": true
           },
 
           "category": {
@@ -917,7 +916,8 @@
           },
           "event": {
             "type": "string",
-            "description": "Event at which you presented."
+            "description": "Event at which you presented.",
+            "required": true
           },
           "location": {
             "type": "string",
@@ -926,8 +926,7 @@
           "date": {
             "type": "string",
             "description": "Presentation date.",
-            "format": "date",
-            "required": true
+            "format": "date"
           },
           "highlights": {
             "type": "array",
@@ -965,19 +964,20 @@
 
           "role": {
             "type": "string",
-            "description": "Governance role: board member, contributor, director, etc."
+            "description": "Governance role: board member, contributor, director, etc.",
+            "required": true
           },
 
           "organization": {
             "type": "string",
-            "description": "The organization."
+            "description": "The organization.",
+            "required": true
           },
 
           "start": {
             "type": "string",
             "description": "Start date.",
-            "format": "date",
-            "required": true
+            "format": "date"
           },
 
           "end": {
@@ -1183,6 +1183,7 @@
 
           "quote": {
             "type": "string",
+            "required": true,
             "description": "A quoted reference, eg, 'Susan was an excellent team leader, manager, and operations specialist with a great eye for detail. I'd gladly hire her again if I could!'"
           },
 
@@ -1245,11 +1246,13 @@
         "properties": {
           "title": {
             "type": "string",
-            "description": "Title of the extracurricular activity."
+            "description": "Title of the extracurricular activity.",
+            "required": true
           },
           "activity": {
             "type": "string",
-            "description": "The extracurricular activity."
+            "description": "The extracurricular activity.",
+            "required": true
           },
           "location": {
             "type": "string",
@@ -1258,8 +1261,7 @@
           "start": {
             "type": "string",
             "description": "Start date.",
-            "format": "date",
-            "required": true
+            "format": "date"
           },
           "end": {
             "type": "string",
@@ -1297,12 +1299,14 @@
 
               "organization": {
                 "type": "string",
-                "description": "The name of the organization or group."
+                "description": "The name of the organization or group.",
+                "required": true
               },
 
               "role": {
                 "type": "string",
-                "description": "Your role in the organization or group."
+                "description": "Your role in the organization or group.",
+                "required": true
               },
 
               "url": {
