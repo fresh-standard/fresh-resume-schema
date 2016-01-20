@@ -157,9 +157,9 @@
                 "description": "A label for this contact information."
               },
 
-              "flavor": {
+              "category": {
                 "type": "string",
-                "description": "The flavor of contact information: email, phone, url, postal, or IM."
+                "description": "Type of contact information: email, phone, url, postal, or IM."
               },
 
               "value": {
@@ -508,7 +508,7 @@
             "additionalProperties": true,
             "properties": {
 
-              "flavor": {
+              "category": {
                 "type": "string",
                 "description": "The type of service work, such as volunteer or military."
               },
@@ -750,7 +750,7 @@
         "additionalProperties": true,
         "properties": {
 
-          "flavor": {
+          "category": {
             "type": "string",
             "description": "Type of recognition: award, honor, prize, etc."
           },
@@ -805,7 +805,7 @@
             "required": true
           },
 
-          "flavor": {
+          "category": {
             "type": "string",
             "description": "One of 'book', 'article', 'essay', 'blog post', or 'series'."
           },
@@ -864,7 +864,7 @@
             "description": "Title of the book, blog, or article."
           },
 
-          "flavor": {
+          "category": {
             "type": "string",
             "description": "One of: book, article, blog, magazine, series, etc."
           },
@@ -946,7 +946,7 @@
             "description": "Summary of your governance at this organization."
           },
 
-          "flavor": {
+          "category": {
             "type": "string",
             "description": "Type of governance: committee, board, standards group, etc."
           },
@@ -1136,9 +1136,9 @@
                   "description": "Friendly label for this piece of contact info."
                 },
 
-                "flavor": {
+                "category": {
                   "type": "string",
-                  "description": "Flavor of contact information (phone, email, web, etc.)."
+                  "description": "Type of contact information (phone, email, web, etc.)."
                 },
 
                 "value": {
@@ -1174,7 +1174,7 @@
             "description": "A quoted reference, eg, 'Susan was an excellent team leader, manager, and operations specialist with a great eye for detail. I'd gladly hire her again if I could!'"
           },
 
-          "flavor": {
+          "category": {
             "type": "string",
             "description": "Type of reference: personal, professional, or technical."
           },
