@@ -883,7 +883,19 @@
               "type": "string",
               "description": "Author name."
             }
+          },
+
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "Publication date in YYYY, YYYY-MM, or YYYY-MM-DD format."
+          },
+
+          "summary": {
+            "type": "string",
+            "description": "A brief description of the book, magazine, etc."
           }
+
         }
       }
     },
