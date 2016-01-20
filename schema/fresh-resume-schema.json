@@ -18,6 +18,7 @@
     "meta": {
       "type": "object",
       "additionalProperties": true,
+      "required": true,
       "description": "The 'meta' section contains metadata information for the resume, including the resume version, schema, and any other fields required by tools.",
       "properties": {
         "format": {
