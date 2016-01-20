@@ -37,7 +37,6 @@
       "type": "object",
       "additionalProperties": true,
       "description": "The 'info' section contains basic summary information for the candidate, including an optional label or job title, candidate photo, summary, and quote.",
-      "required": true,
       "properties": {
         "label": {
           "type": "string",
