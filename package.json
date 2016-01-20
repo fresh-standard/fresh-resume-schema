@@ -1,6 +1,6 @@
 {
   "name": "fresca",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "The FRESH schema for resumes and CVs.",
   "repository": {
     "type": "git",
@@ -8,13 +8,17 @@
   },
   "keywords": [
     "resume",
+    "résumé",
     "CV",
+    "FRESCA",
     "FRESH",
+    "HackMyResume",
     "FluentCV",
     "schema",
-    "JSON"
+    "JSON",
+    "employment"
   ],
-  "author": "James M. Devlin <james@indevious.com> (http://indevious.com)",
+  "author": "hacksalot <hacksalot@indevious.com> (http://indevious.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fluentdesk/FRESCA/issues"
