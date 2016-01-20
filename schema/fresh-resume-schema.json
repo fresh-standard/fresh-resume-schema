@@ -866,7 +866,7 @@
 
           "category": {
             "type": "string",
-            "description": "One of: book, article, blog, magazine, series, etc."
+            "description": "The type of reading: book, article, blog, magazine, series, etc."
           },
 
           "url": {
