@@ -281,7 +281,7 @@
 
               "keywords": {
                 "type": "array",
-                "description": "Skills and/or keywords used on this position.",
+                "description": "Keywords associated with this position.",
                 "additionalItems": false,
                 "items": {
                   "type": "string",
@@ -399,7 +399,7 @@
 
           "keywords": {
             "type": "array",
-            "description": "Skills and/or keywords used on this project.",
+            "description": "Keywords associated with this project.",
             "additionalItems": false,
             "items": {
               "type": "string",
@@ -559,6 +559,16 @@
                 }
               },
 
+              "keywords": {
+                "type": "array",
+                "description": "Keywords associated with this service.",
+                "additionalItems": false,
+                "items": {
+                  "type": "string",
+                  "description": "For example, C++, HTML, HIPAA, etc."
+                }
+              },
+
               "location": {
                 "type": "string",
                 "description": "Freeform location of the position, e.g., 'San Francisco, CA' or 'Tokyo'."
@@ -659,6 +669,26 @@
               "summary": {
                 "type": "string",
                 "description": "A short summary of this education experience."
+              },
+
+              "keywords": {
+                "type": "array",
+                "description": "Keywords associated with this education stint.",
+                "additionalItems": false,
+                "items": {
+                  "type": "string",
+                  "description": "For example, C++, HTML, HIPAA, etc."
+                }
+              },
+
+              "highlights": {
+                "type": "array",
+                "description": "Noteworthy achievements and/or highlights.",
+                "additionalItems": false,
+                "items": {
+                  "type": "string",
+                  "description": "For ex, 'Graduated *summa cum laude*'."
+                }
               },
 
               "location": {
@@ -944,13 +974,23 @@
             "format": "date"
           },
 
+          "keywords": {
+            "type": "array",
+            "description": "Keywords associated with this governance stint.",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "For example, C++, CRM, HIPAA."
+            }
+          },
+
           "highlights": {
             "type": "array",
             "description": "Noteworthy achievements and/or highlights.",
             "additionalItems": false,
             "items": {
               "type": "string",
-              "description": "For ex, 'Led 5-person development team, increasing profits by 50% year-over-year'."
+              "description": "For ex, 'Increased company profits by 35% year over year'."
             }
           }
 
@@ -1020,7 +1060,28 @@
             "type": "string",
             "description": "Date the sample was released in YYYY, YYYY-MM, or YYYY-MM-DD format.",
             "format": "date"
+          },
+
+          "highlights": {
+            "type": "array",
+            "description": "Noteworthy achievements and/or highlights for this sample.",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "For ex, 'Implemented optimized search algorithm dervied from Slices of Pi'."
+            }
+          },
+
+          "keywords": {
+            "type": "array",
+            "description": "Keywords associated with this work sample.",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "For example, C++, HTML, game."
+            }
           }
+
         }
       }
     },
@@ -1150,6 +1211,7 @@
           "keywords": {
             "type": "array",
             "additionalItems": false,
+            "description": "Keywords associated with this interest.",
             "items": {
               "type": "string",
               "description": "A keyword relating to this interest."
@@ -1261,6 +1323,16 @@
                 "items": {
                   "type": "string",
                   "description": "For ex, 'Served on board of directors of national non-profit organization with 20,000 members.'."
+                }
+              },
+
+              "keywords": {
+                "type": "array",
+                "description": "Keywords associated with this affiliation.",
+                "additionalItems": false,
+                "items": {
+                  "type": "string",
+                  "description": "For example, C++, CRM, HIPAA."
                 }
               },
 
