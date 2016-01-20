@@ -934,8 +934,21 @@
             "additionalItems": false,
             "items": {
               "type": "string",
-              "description": "For ex, 'Won 'Best Speaker' award at 2012 E3 expo'."
+              "description": "An array of specific highlights such as 'Won 'Best Speaker' award at 2012 E3 expo'."
             }
+          },
+          "keywords": {
+            "type": "array",
+            "description": "Keywords associated with this speaking engagement.",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "A list of keywords such as 'TED', 'E3', 'mathematics', 'Big Data', etc."
+            }
+          },
+          "summary": {
+            "type": "string",
+            "description": "A description of this speaking engagement."
           }
         }
       }
