@@ -831,8 +831,8 @@
 
           "date": {
             "type": "string",
-            "description": "Publication date in YYYY, YYYY-MM, or YYYY-MM-DD format.",
-            "required": true
+            "format": "date",
+            "description": "Publication date in YYYY, YYYY-MM, or YYYY-MM-DD format."
           },
 
           "url": {
