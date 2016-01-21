@@ -237,8 +237,7 @@
 
               "position": {
                 "type": "string",
-                "description": "Your position or formal job title.",
-                "required": true
+                "description": "Your position or formal job title."
               },
 
               "url": {
@@ -328,8 +327,7 @@
 
           "role": {
             "type": "string",
-            "description": "Your role on the project: Contributor, Creator, etc.",
-            "required": true
+            "description": "Your role on the project: Contributor, Creator, etc."
           },
 
           "url": {
@@ -520,8 +518,7 @@
 
               "position": {
                 "type": "string",
-                "description": "Your position or formal service role.",
-                "required": true
+                "description": "Your position or formal service role."
               },
 
               "url": {
@@ -611,8 +608,7 @@
 
               "title": {
                 "type": "string",
-                "description": "A freeform title for this education stint. Typically, this should be the short name of your degree, certification, or training.",
-                "required": true
+                "description": "A freeform title for this education stint. Typically, this should be the short name of your degree, certification, or training."
               },
 
               "institution": {
@@ -633,14 +629,13 @@
 
               "start": {
                 "type": "string",
-                "description": "Date your schooling began, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
-                "format": "date",
-                "required": true
+                "description": "Date this schooling began, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+                "format": "date"
               },
 
               "end": {
                 "type": "string",
-                "description": "Date your schooling ended, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+                "description": "Date this schooling ended, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
                 "format": "date"
               },
 
@@ -768,8 +763,7 @@
 
           "from": {
             "type": "string",
-            "description": "Name of the awarding company, insitution, or individual.",
-            "required": true
+            "description": "Name of the awarding company, insitution, or individual."
           },
 
           "summary": {
@@ -911,8 +905,7 @@
         "properties": {
           "title": {
             "type": "string",
-            "description": "Speaking engagement title.",
-            "required": true
+            "description": "Speaking engagement title."
           },
           "event": {
             "type": "string",
@@ -977,8 +970,7 @@
 
           "role": {
             "type": "string",
-            "description": "Governance role: board member, contributor, director, etc.",
-            "required": true
+            "description": "Governance role: board member, contributor, director, etc."
           },
 
           "organization": {
@@ -1318,8 +1310,7 @@
 
               "role": {
                 "type": "string",
-                "description": "Your role in the organization or group.",
-                "required": true
+                "description": "Your role in the organization or group."
               },
 
               "url": {
