@@ -25,12 +25,14 @@ YAML...
   "info": { /* Basic info */ },
   "contact": { /* Contact information */ },
   "location": { /* Location / address */ },
-  "meta": { /* Resume metadata */ },  
+  "meta": { /* Resume metadata */ },
   "employment": { /* Employment history */ },
   "projects": [ /* Project history */ ],
   "skills": [ /* Skills and technologies */ ],
   "education": { /* Schools, training, certifications */ },
+  "affiliation": { /* Clubs, groups, and associations */ },
   "service": { /* Volunteer, military, civilian service */ },
+  "disposition": { /* Disposition towards work, relocation, schedule */ },
   "writing": [ /* Writing, blogging, and publications */ ],
   "reading": [ /* Books and publication a la StackOverflow Careers */ ],
   "speaking": [ /* Writing, blogging, and publications */ ],
@@ -41,7 +43,8 @@ YAML...
   "references": [ /* Candidate references */ ],
   "testimonials": [ /* Public candidate testimonials */ ],  
   "extracurricular": [ /* Interests & hobbies */ ],
-  "interests": [ /* Interests & hobbies */ ]
+  "interests": [ /* Interests & hobbies */ ],
+  "languages": [ /* languages spoken */ ]
 }
 ```
 
