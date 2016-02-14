@@ -1278,6 +1278,7 @@
     },
 
 
+
     "affiliation": {
       "type": "object",
       "additionalProperties": true,
