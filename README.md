@@ -74,7 +74,7 @@ FRESCA resumes are:
 
 The FRESH resume schema is licensed under MIT. Go crazy.
 
-[fresh]: https://github.com/fresh-standard/FRESH
+[fresh]: https://resume.freshstandard.org
 [schema]: schema/fresh-resume-schema.json
 [cli]: https://www.npmjs.com/package/fluentcv
 [fluentcv]: https://fluentdesk.com/fluentcv
