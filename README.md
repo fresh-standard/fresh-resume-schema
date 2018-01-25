@@ -52,7 +52,7 @@ YAML...
 concrete formats (HTML, LaTeX, Markdown, PDF, etc.) as well as enable
 21st-century analysis of your resume and career data...
 
-![](http://fluentdesk.com/img/fluentcv_desktop_alpha.png)
+![](https://fluentdesk.com/img/fluentcv_desktop_alpha.png)
 
 ...in a way that's not possible with traditional, 20th-century resume tools and
 formats.
@@ -77,7 +77,7 @@ The FRESH resume schema is licensed under MIT. Go crazy.
 [fresh]: https://github.com/fresh-standard/FRESH
 [schema]: schema/fresh-resume-schema.json
 [cli]: https://www.npmjs.com/package/fluentcv
-[fluentcv]: http://fluentdesk.com/fluentcv
+[fluentcv]: https://fluentdesk.com/fluentcv
 [jrs]: http://jsonresume.org
 [exemplar]: https://github.com/fluentdesk/jane-q-fullstacker/blob/master/resume/jane-resume.json
 [npm]: https://www.npmjs.com/package/fluentcv
