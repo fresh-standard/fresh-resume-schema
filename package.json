@@ -18,13 +18,13 @@
     "JSON",
     "employment"
   ],
-  "author": "hacksalot <hacksalot@indevious.com> (http://indevious.com)",
+  "author": "hacksalot <hacksalot@indevious.com> (https://indevious.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fresh-standard/FRESCA/issues"
   },
   "main": "schema/fresh-resume-schema.json",
-  "homepage": "http://freshstandard.org",
+  "homepage": "https://resume.freshstandard.org",
   "ignore": [
     "**/.*",
     "node_modules",
