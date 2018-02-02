@@ -1,6 +1,6 @@
 {
   "name": "fresh-resume-schema",
-  "version": "0.6.1",
+  "version": "1.0.0-beta",
   "description": "The FRESH schema for resumes and CVs.",
   "repository": {
     "type": "git",
