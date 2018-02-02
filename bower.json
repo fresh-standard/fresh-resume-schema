@@ -1,12 +1,12 @@
 {
-  "name": "fresca",
+  "name": "fresh-resume-standard",
   "version": "0.6.1",
-  "homepage": "https://github.com/fresh-standard/FRESCA",
+  "homepage": "https://github.com/fresh-standard/fresh-resume-schema",
   "authors": [
     "hacksalot <hacksalot@indevious.com>"
   ],
   "description": "The FRESH schema for resumes and CVs.",
-  "main": "schema/fresh-resume-schema.json",
+  "main": "schema/fresh-resume-schema-v1.0.0-beta.json",
   "keywords": [
     "resume",
     "résumé",

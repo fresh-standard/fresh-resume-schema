@@ -1,10 +1,10 @@
 {
-  "name": "fresca",
+  "name": "fresh-resume-schema",
   "version": "0.6.1",
   "description": "The FRESH schema for resumes and CVs.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fresh-standard/FRESCA.git"
+    "url": "https://github.com/fresh-standard/fresh-resume-schema.git"
   },
   "keywords": [
     "resume",
@@ -21,9 +21,9 @@
   "author": "hacksalot <hacksalot@indevious.com> (https://indevious.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fresh-standard/FRESCA/issues"
+    "url": "https://github.com/fresh-standard/fresh-resume-schema/issues"
   },
-  "main": "schema/fresh-resume-schema.json",
+  "main": "schema/fresh-resume-schema-v1.0.0-beta.json",
   "homepage": "https://resume.freshstandard.org",
   "ignore": [
     "**/.*",
