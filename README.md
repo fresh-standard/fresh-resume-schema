@@ -1,16 +1,15 @@
-FRESCA
+The FRESH Resume Schema
 ======
-*The FRESH Résumé & Employment Schema*
+*A rational schema for your résumé or CV. Based on [FRESH][f].*
 
-The [FRESH][fresh] résumé schema is an open source, standards-friendly,
+The [FRESH résumé schema][fresh] is an open source, standards-friendly,
 JSON/YAML-driven format for résumé / CVs and other employment artifacts.
 
 - [**View the official FRESH schema document.**][schema]
 - [**View a sample FRESH resume.**][exemplar]
 
-FRESH is supported as a native format by both [FluentCV Desktop][fluentcv] and
-[Command Line][npm] and can be trivially converted to and from
-[JSON Resume][jrs].
+FRESH is supported natively by [HackMyResume][hmr] and can be trivially
+converted to and from the [JSON Resume][jrs] format.
 
 ## What It Does
 
@@ -48,18 +47,14 @@ YAML...
 }
 ```
 
-..which you can use to generate resumes and other career artifacts in specific
+...which you can use to generate resumes and other career artifacts in specific
 concrete formats (HTML, LaTeX, Markdown, PDF, etc.) as well as enable
-21st-century analysis of your resume and career data...
-
-![](https://fluentdesk.com/img/fluentcv_desktop_alpha.png)
-
-...in a way that's not possible with traditional, 20th-century resume tools and
-formats.
+21st-century analysis of your resume and career data in a way that's not
+possible with traditional, 20th-century resume tools and formats.
 
 ## Anatomy of a FRESH Resume
 
-FRESCA resumes are:
+FRESH resumes are:
 
 - Text-based.
 - Versionable.
@@ -74,6 +69,8 @@ FRESCA resumes are:
 
 The FRESH resume schema is licensed under MIT. Go crazy.
 
+[f]: https://freshstandard.org
+[hmr]: https://fluentdesk.com/hackmyresume
 [fresh]: https://resume.freshstandard.org
 [schema]: schema/fresh-resume-schema.json
 [cli]: https://www.npmjs.com/package/fluentcv
