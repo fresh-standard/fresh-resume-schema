@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/fresh-standard/fresh-resume-schema/issues"
   },
-  "main": "schema/fresh-resume-schema-v1.0.0-beta.json",
+  "main": "schema/fresh-resume-schema_1.0.0-beta.json",
   "homepage": "https://resume.freshstandard.org",
   "ignore": [
     "**/.*",
