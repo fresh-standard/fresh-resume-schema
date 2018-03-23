@@ -72,7 +72,7 @@ The FRESH resume schema is licensed under MIT. Go crazy.
 [f]: https://freshstandard.org
 [hmr]: https://fluentdesk.com/hackmyresume
 [fresh]: https://resume.freshstandard.org
-[schema]: schema/fresh-resume-schema.json
+[schema]: schema/fresh-resume-schema_1.0.0-beta.json
 [cli]: https://www.npmjs.com/package/fluentcv
 [fluentcv]: https://fluentdesk.com/fluentcv
 [jrs]: http://jsonresume.org
