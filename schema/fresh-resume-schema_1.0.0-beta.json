@@ -579,7 +579,7 @@
     "education": {
       "type": "object",
       "additionalProperties": true,
-      "description": "The 'employment' section describes the candidate's formal education, including college and university, continuing education, and standalone programs and courses.",
+      "description": "The 'education' section describes the candidate's formal education, including college and university, continuing education, and standalone programs and courses.",
       "properties": {
 
         "summary": {
