@@ -3,14 +3,14 @@
   "title": "FRESH Resume Schema",
   "type": "object",
   "additionalProperties": true,
+  "required": ["name", "meta"],
   "properties": {
 
 
 
     "name": {
       "type": "string",
-      "description": "The candidate's name as it should appear on the resume.",
-      "required": true
+      "description": "The candidate's name as it should appear on the resume."
     },
 
 
@@ -18,13 +18,12 @@
     "meta": {
       "type": "object",
       "additionalProperties": true,
-      "required": true,
       "description": "The 'meta' section contains metadata information for the resume, including the resume version, schema, and any other fields required by tools.",
+      "required": ["format"],
       "properties": {
         "format": {
           "type": "string",
-          "description": "The canonical resume format and version. Should be 'FRESH@0.1.0'.",
-          "required": true
+          "description": "The canonical resume format and version. Should be 'FRESH@0.1.0'."
         },
         "version": {
           "type": "string",
@@ -227,12 +226,12 @@
           "items": {
             "type": "object",
             "additionalProperties": true,
+            "required": ["employer"],
             "properties": {
 
               "employer": {
                 "type": "string",
-                "description": "Employer name.",
-                "required": true
+                "description": "Employer name."
               },
 
               "position": {
@@ -302,12 +301,12 @@
       "items": {
         "type": "object",
         "additionalProperties": true,
+        "required": ["title"],
         "properties": {
 
           "title": {
             "type": "string",
-            "description": "Project name or code-name.",
-            "required": true
+            "description": "Project name or code-name."
           },
 
           "category": {
@@ -343,11 +342,11 @@
             "items": {
               "type": "object",
               "additionalProperties": true,
+              "required": ["category"],
               "properties": {
                 "category": {
                   "type": "string",
-                  "description": "Media category: image, thumbnail, screenshot, MP3, download, etc.",
-                  "required": true
+                  "description": "Media category: image, thumbnail, screenshot, MP3, download, etc."
                 },
                 "name": {
                   "type": "string",
@@ -422,12 +421,12 @@
           "items": {
             "type": "object",
             "additionalProperties": true,
+            "required": ["name", "skills"],
             "properties": {
 
               "name": {
                 "type": "string",
-                "description": "Name of the skillset: 'Programming' or 'Project Management' etc.",
-                "required": true
+                "description": "Name of the skillset: 'Programming' or 'Project Management' etc."
               },
 
               "level": {
@@ -438,7 +437,6 @@
               "skills": {
                 "type": "array",
                 "additionalItems": false,
-                "required": true,
                 "items": {
                   "type": "string",
                   "description": "Title or ID of a skill from the skills list."
@@ -455,12 +453,12 @@
           "items": {
             "type": "object",
             "additionalProperties": true,
+            "required": ["name"],
             "properties": {
 
               "name": {
                 "type": "string",
-                "description": "The name or title of the skill.",
-                "required": true
+                "description": "The name or title of the skill."
               },
 
               "level": {
@@ -503,6 +501,7 @@
           "items": {
             "type": "object",
             "additionalProperties": true,
+            "required": ["organization"],
             "properties": {
 
               "category": {
@@ -512,8 +511,7 @@
 
               "organization": {
                 "type": "string",
-                "description": "The service organization, such as Red Cross or National Guard.",
-                "required": true
+                "description": "The service organization, such as Red Cross or National Guard."
               },
 
               "position": {
@@ -580,6 +578,7 @@
       "type": "object",
       "additionalProperties": true,
       "description": "The 'employment' section describes the candidate's formal education, including college and university, continuing education, and standalone programs and courses.",
+      "required": ["level"],
       "properties": {
 
         "summary": {
@@ -589,8 +588,7 @@
 
         "level": {
           "type": "string",
-          "description": "Highest level of education obtained (none, diploma, some-college, degree).",
-          "required": true
+          "description": "Highest level of education obtained (none, diploma, some-college, degree)."
         },
 
         "degree": {
@@ -604,6 +602,7 @@
           "items": {
             "type": "object",
             "additionalProperties": true,
+            "required": ["institution"],
             "properties": {
 
               "title": {
@@ -613,8 +612,7 @@
 
               "institution": {
                 "type": "string",
-                "description": "College or school name.",
-                "required": true
+                "description": "College or school name."
               },
 
               "area": {
@@ -704,25 +702,23 @@
       "items": {
         "type": "object",
         "additionalProperties": true,
+        "required": ["network", "user", "url"],
         "properties": {
 
           "network": {
             "type": "string",
-            "description": "The name of the social network, such as Facebook or GitHub.",
-            "required": true
+            "description": "The name of the social network, such as Facebook or GitHub."
           },
 
           "user": {
             "type": "string",
-            "description": "Your username or handle on the social network.",
-            "required": true
+            "description": "Your username or handle on the social network."
           },
 
           "url": {
             "type": "string",
             "description": "URL of your profile page on this network.",
-            "format": "uri",
-            "required": true
+            "format": "uri"
           },
 
           "label": {
@@ -742,6 +738,7 @@
       "items": {
         "type": "object",
         "additionalProperties": true,
+        "required": ["title"],
         "properties": {
 
           "category": {
@@ -751,8 +748,7 @@
 
           "title": {
             "type": "string",
-            "description": "Title of the award or recognition.",
-            "required": true
+            "description": "Title of the award or recognition."
           },
 
           "date": {
@@ -789,12 +785,12 @@
       "items": {
         "type": "object",
         "additionalProperties": true,
+        "required": ["title"],
         "properties": {
 
           "title": {
             "type": "string",
-            "description": "Title of the article, essay, or book.",
-            "required": true
+            "description": "Title of the article, essay, or book."
           },
 
           "category": {
@@ -849,12 +845,12 @@
       "items": {
         "type": "object",
         "additionalProperties": true,
+        "required": ["title"],
         "properties": {
 
           "title": {
             "type": "string",
-            "description": "Title of the book, blog, or article.",
-            "required": true
+            "description": "Title of the book, blog, or article."
           },
 
           "category": {
@@ -902,6 +898,7 @@
       "items": {
         "type": "object",
         "additionalProperties": true,
+        "required": ["event"],
         "properties": {
           "title": {
             "type": "string",
@@ -909,8 +906,7 @@
           },
           "event": {
             "type": "string",
-            "description": "Event at which you presented.",
-            "required": true
+            "description": "Event at which you presented."
           },
           "location": {
             "type": "string",
@@ -956,6 +952,7 @@
       "items": {
         "type": "object",
         "additionalProperties": true,
+        "required": ["organization"],
         "properties": {
 
           "summary": {
@@ -975,8 +972,7 @@
 
           "organization": {
             "type": "string",
-            "description": "The organization.",
-            "required": true
+            "description": "The organization."
           },
 
           "start": {
@@ -1024,12 +1020,12 @@
       "items": {
         "type": "object",
         "additionalProperties": true,
+        "required": ["language"],
         "properties": {
 
           "language": {
             "type": "string",
-            "description": "The name of the language: English, Spanish, etc.",
-            "required": true
+            "description": "The name of the language: English, Spanish, etc."
           },
 
           "level": {
@@ -1054,12 +1050,12 @@
       "items": {
         "type": "object",
         "additionalProperties": true,
+        "required": ["title"],
         "properties": {
 
           "title": {
             "type": "string",
-            "description": "Title or descriptive name.",
-            "required": true
+            "description": "Title or descriptive name."
           },
 
           "summary": {
@@ -1112,12 +1108,12 @@
       "items": {
         "type": "object",
         "additionalProperties": true,
+        "required": ["name"],
         "properties": {
 
           "name": {
             "type": "string",
-            "description": "The full name of the person giving the reference.",
-            "required": true
+            "description": "The full name of the person giving the reference."
           },
 
           "role": {
@@ -1178,17 +1174,16 @@
       "items": {
         "type": "object",
         "additionalProperties": true,
+        "required": ["name", "quote"],
         "properties": {
 
           "name": {
             "type": "string",
-            "description": "The full name of the person giving the reference.",
-            "required": true
+            "description": "The full name of the person giving the reference."
           },
 
           "quote": {
             "type": "string",
-            "required": true,
             "description": "A quoted reference, eg, 'Susan was an excellent team leader, manager, and operations specialist with a great eye for detail. I'd gladly hire her again if I could!'"
           },
 
@@ -1214,12 +1209,12 @@
       "items": {
         "type": "object",
         "additionalProperties": true,
+        "required": ["name"],
         "properties": {
 
           "name": {
             "type": "string",
-            "description": "The name or title of the interest or hobby.",
-            "required": true
+            "description": "The name or title of the interest or hobby."
           },
 
           "summary": {
@@ -1248,16 +1243,15 @@
       "items": {
         "type": "object",
         "additionalProperties": true,
+        "required": ["title", "activity"],
         "properties": {
           "title": {
             "type": "string",
-            "description": "Title of the extracurricular activity.",
-            "required": true
+            "description": "Title of the extracurricular activity."
           },
           "activity": {
             "type": "string",
-            "description": "The extracurricular activity.",
-            "required": true
+            "description": "The extracurricular activity."
           },
           "location": {
             "type": "string",
@@ -1296,6 +1290,7 @@
           "items": {
             "type": "object",
             "additionalProperties": true,
+            "required": ["organization"],
             "properties": {
 
               "category": {
@@ -1305,8 +1300,7 @@
 
               "organization": {
                 "type": "string",
-                "description": "The name of the organization or group.",
-                "required": true
+                "description": "The name of the organization or group."
               },
 
               "role": {
